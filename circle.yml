@@ -1,3 +1,7 @@
+test:
+  override:
+    - echo "overrideing tests"
+
 deployment:
   production:
     branch: master
