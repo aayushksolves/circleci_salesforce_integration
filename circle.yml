@@ -6,6 +6,4 @@ deployment:
   production:
     branch: master
     commands:
-      - echo ${USERNAME}
-      - echo ${PASSWORD}
       - ant -f build/build.xml -lib build/lib/ deployCode
