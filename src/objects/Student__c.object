@@ -42,7 +42,6 @@
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <customHelpPage>Student_Help</customHelpPage>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>Student enrolled with organisation.</description>
     <enableActivities>false</enableActivities>

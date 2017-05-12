@@ -1,19 +1,11 @@
 <project name="TestApp" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
 
-    <property file="build.properties"/>
-    <property environment="env"/>
-
-    <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
-        <classpath>
-            <pathelement location="../ant-salesforce.jar" />
-        </classpath>
-    </taskdef>
     <!-- Shows deploying code & running tests for code in directory -->
     <target name="deployCode">
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-      <sf:deploy username="${USERNAME}" password="${PASSWORD}" serverurl="https://login.salesforce.com" maxPoll="20" deployRoot="." rollbackOnError="true" runAllTests="false" >
+      <sf:deploy username="${USERNAME}" password="${PASSWORD}" serverurl="https://login.salesforce.com" maxPoll="20" deployRoot="src" rollbackOnError="true" runAllTests="false" >
       </sf:deploy>
-      <!-- <sf:deploy username="aayush1@ksolves.com" password="Aayu_mall02" serverurl="https://login.salesforce.com" maxPoll="20" deployRoot="." rollbackOnError="true" runAllTests="false" >
+      <!-- <sf:deploy username="aayush1@ksolves.com" password="Aayu_mall02" serverurl="https://login.salesforce.com" maxPoll="20" deployRoot="src" rollbackOnError="true" runAllTests="false" >
       </sf:deploy> -->
     </target>
 
