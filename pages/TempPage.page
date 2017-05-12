@@ -1,0 +1,11 @@
+<apex:page controller="TempCtrl">
+    <apex:repeat value="{!teachers}" var="teacher">
+        
+        <p>
+            <h3>{!teacher.Name}</h3>
+    	</p>
+            <apex:outputPanel id="studentsDiv">
+                Stuednet
+            </apex:outputPanel>
+    </apex:repeat>
+</apex:page>
