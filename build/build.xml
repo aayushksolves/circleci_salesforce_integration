@@ -3,7 +3,7 @@
     <!-- Shows deploying code & running tests for code in directory -->
     <target name="deployCode">
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-      <sf:deploy username='"'${USERNAME}'"' password='"'${PASSWORD}'"' serverurl="https://login.salesforce.com" maxPoll="20" deployRoot="src" rollbackOnError="true" runAllTests="false" >
+      <sf:deploy username='"'+${USERNAME}+'"' password='"'+${PASSWORD}+'"' serverurl="https://login.salesforce.com" maxPoll="20" deployRoot="src" rollbackOnError="true" runAllTests="false" >
       </sf:deploy>
       <!-- <sf:deploy username="aayush1@ksolves.com" password="Aayu_mall02" serverurl="https://login.salesforce.com" maxPoll="20" deployRoot="src" rollbackOnError="true" runAllTests="false" >
       </sf:deploy> -->
