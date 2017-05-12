@@ -1,0 +1,11 @@
+test:
+  override:
+    - ant -f build/build.xml -lib build/lib/ test:
+  timeout: 600
+
+deployment:
+
+  production:
+    branch: master
+    commands:
+      - ant deployCode
