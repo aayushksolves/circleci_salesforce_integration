@@ -2,7 +2,7 @@ test:
   override:
     - echo ${USERNAME}
     - echo ${PASSWORD}
-    - ant -f build/build.xml -lib build/lib/ deployCode:
+    - ant -f build/build.xml -lib build/lib/
   timeout: 600
 
 deployment:
