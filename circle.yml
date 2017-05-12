@@ -1,5 +1,7 @@
 test:
   override:
+    - echo ${USERNAME}
+    - echo ${PASSWORD}
     - ant -f build/build.xml -lib build/lib/ deployCode:
   timeout: 600
 
